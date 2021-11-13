@@ -41,7 +41,7 @@ function Checkout() {
     <div className="bg-gray-100">
       <Header />
 
-      <main className="lg:flex max-w-screen-2xl mx-auto">
+      <main className="mx-auto lg:flex max-w-screen-2xl">
         {/* Left */}
         <div className="flex-grow m-5 shadow-sm">
           <Image
@@ -52,7 +52,7 @@ function Checkout() {
           />
 
           <div className="flex flex-col p-5 space-y-10 bg-white">
-            <h1 className="text-3xl border-b pb-4">
+            <h1 className="pb-4 text-3xl border-b">
               {items.length === 0
                 ? "Your Amazon Basket is empty."
                 : "Shopping Basket"}
@@ -75,7 +75,7 @@ function Checkout() {
         </div>
 
         {/* Right */}
-        <div className="flex flex-col bg-white shadow-sm p-10">
+        <div className="flex flex-col p-10 bg-white shadow-sm">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
